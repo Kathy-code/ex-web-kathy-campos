@@ -5,16 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70e871e6-a98f-491a-95d2-3ad94af38e3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/page/BasicCalculatorPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/steps/SumaSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/stepsdefinitions/SumarNumerosStepsDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/concatenar_numeros.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/dividir_numeros.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/error_alfanumerico.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/multiplicar_numeros.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/restar_numeros.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/sumar_numeros.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,9 +43,32 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/usuario/IdeaProjects/qa-lab-selenium"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="RunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex-web-kathy-campos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nttdata.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nttdata.runner" />
+      <option name="MAIN_CLASS_NAME" value="com.nttdata.runner.RunnerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RunnerTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
