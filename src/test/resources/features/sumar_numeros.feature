@@ -1,6 +1,6 @@
-Feature: Operar números enteros
+Feature: Sumar números
   Como usuario
-  Quiero operar dos números enteros
+  Quiero operar dos números
   Para obtener el resultado
 
   Background:
@@ -11,17 +11,5 @@ Feature: Operar números enteros
   @test
   Scenario: Sumar números enteros
     And seleciono la operacion Add para sumar
-    And hago clic en el boton Calculate para sumar
-    Then se me mostrará el resultado de la suma en el text box Answer
-#
-#  @test2
-#  Scenario: Restar números enteros
-#    And seleciono la operacion Subtract para restar
-#    And hago clic en el boton Calculate para restar
-#    Then se me mostrará el resultado de la resta en el text box Answer
-#
-#  @test3
-#  Scenario: Multiplicar números enteros
-#    And seleciono la operacion Multiply para multiplicar
-#    And hago clic en el boton Calculate para multiplicar
-#    Then se me mostrará el resultado de la multiplicación en el text box Answer
+    And hago clic en el boton Calculate
+    Then se me mostrará el resultado en el text box Answer

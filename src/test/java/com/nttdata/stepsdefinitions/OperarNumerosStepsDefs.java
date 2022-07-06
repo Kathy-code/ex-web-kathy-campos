@@ -1,7 +1,9 @@
 package com.nttdata.stepsdefinitions;
 
-//import com.nttdata.steps.CommonSteps;
+import com.nttdata.steps.CommonSteps;
 
+import com.nttdata.steps.MultiplicacionSteps;
+import com.nttdata.steps.RestaSteps;
 import com.nttdata.steps.SumaSteps;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -15,7 +17,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class SumarNumerosStepsDefs {
+public class OperarNumerosStepsDefs {
 
     private WebDriver driver;
     private Scenario scenario;
@@ -25,7 +27,6 @@ public class SumarNumerosStepsDefs {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\usuario\\IdeaProjects\\ex-web-kathy-campos\\drivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-
     }
 
     @Before(order = 1)
@@ -46,40 +47,77 @@ public class SumarNumerosStepsDefs {
 
     @And("los campos First number y Second number están limpios")
     public void los_campos_first_number_y_second_number_están_limpios() {
-        SumaSteps sumaSteps = new SumaSteps(driver);
-        sumaSteps.cleanInputs();
+        CommonSteps commonSteps = new CommonSteps(driver);
+        commonSteps.cleanInputs();
         screenShot();
-
     }
 
     @When("ingreso el First number {int} y el Second number {int}")
     public void ingreso_el_first_number_y_el_second_number(Integer firstNumber, Integer secondNumber) {
-        SumaSteps sumaSteps = new SumaSteps(driver);
-        sumaSteps.typeFirstNumber(firstNumber);
-        sumaSteps.typeSecondNumber(secondNumber);
+        CommonSteps commonSteps = new CommonSteps(driver);
+        commonSteps.typeFirstNumber(firstNumber);
+        commonSteps.typeSecondNumber(secondNumber);
         screenShot();
-
     }
 
+    /**
+     * operación: SUMA
+     */
     @And("seleciono la operacion Add para sumar")
     public void seleciono_la_operacion_add_para_sumar() {
         SumaSteps sumaSteps = new SumaSteps(driver);
         sumaSteps.selectAdd();
         screenShot();
-
     }
-
-    @And("hago clic en el boton Calculate para sumar")
+    @And("hago clic en el boton Calculate")
     public void hago_clic_en_el_boton_calculate() {
-        SumaSteps sumaSteps = new SumaSteps(driver);
-        sumaSteps.calculate();
+        CommonSteps commonSteps = new CommonSteps(driver);
+        commonSteps.calculate();
+    }
+    @Then("se me mostrará el resultado en el text box Answer")
+    public void se_me_mostrará_el_resultado_en_el_text_box_answer() {
+        CommonSteps commonSteps = new CommonSteps(driver);
+        commonSteps.getResult();
         screenShot();
     }
 
-    @Then("se me mostrará el resultado de la suma en el text box Answer")
-    public void se_me_mostrará_el_resultado_de_la_operacion_en_el_text_box_answer() {
-        SumaSteps sumaSteps = new SumaSteps(driver);
-        sumaSteps.getSuma();
+    /**
+     * operación: RESTA
+     */
+    @And("seleciono la operacion Subtract para restar")
+    public void seleciono_la_operacion_subtract_para_restar() {
+        RestaSteps restaSteps = new RestaSteps(driver);
+        restaSteps.selectSubtract();
+        screenShot();
+    }
+
+    /**
+     * operación: MULTIPLICACIÓN
+     */
+    @And("seleciono la operacion Multiply para multiplicar")
+    public void seleciono_la_operacion_subtract_para_multiplicar() {
+        MultiplicacionSteps multiplicacionSteps = new MultiplicacionSteps(driver);
+        multiplicacionSteps.selectMultiply();
+        screenShot();
+    }
+
+    /**
+     * operación: DIVISIÓN
+     */
+    @And("seleciono la operacion Divide para dividir")
+    public void seleciono_la_operacion_divide_para_dividir() {
+        MultiplicacionSteps multiplicacionSteps = new MultiplicacionSteps(driver);
+        multiplicacionSteps.selectMultiply();
+        screenShot();
+    }
+
+    /**
+     * operación: CONCATENACIÓN
+     */
+    @And("seleciono la operacion Concatenate para concatenar")
+    public void seleciono_la_operacion_concatenate_para_concatenar() {
+        MultiplicacionSteps multiplicacionSteps = new MultiplicacionSteps(driver);
+        multiplicacionSteps.selectMultiply();
         screenShot();
     }
 
