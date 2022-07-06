@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70e871e6-a98f-491a-95d2-3ad94af38e3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/page/BasicCalculatorPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/steps/SumaSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/stepsdefinitions/SumarNumerosStepsDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/concatenar_numeros.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/dividir_numeros.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/error_alfanumerico.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/multiplicar_numeros.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/restar_numeros.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/sumar_numeros.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/steps/CommonSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/steps/RestaSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/stepsdefinitions/CommomStepsDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/stepsdefinitions/RestarNumerosStepsDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nttdata/steps/SumaSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/steps/SumaSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nttdata/stepsdefinitions/SumarNumerosStepsDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nttdata/stepsdefinitions/SumarNumerosStepsDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/sumar_numeros.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/sumar_numeros.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +38,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/usuario/IdeaProjects/qa-lab-selenium"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/usuario/IdeaProjects/qa-lab-selenium&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean verify" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.RunnerTest">
+    <configuration name="Scenario: Sumar números enteros" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/sumar_numeros.feature" />
+      <option name="GLUE" value="com.nttdata.stepsdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ex-web-kathy-campos" />
+      <option name="NAME_FILTER" value="^Sumar números enteros$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Sumar números enteros$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Sumar números enteros" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ex-web-kathy-campos" />
       <extension name="coverage">
@@ -66,6 +89,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RunnerTest" />
+        <item itemvalue="Cucumber Java.Scenario: Sumar números enteros" />
       </list>
     </recent_temporary>
   </component>
